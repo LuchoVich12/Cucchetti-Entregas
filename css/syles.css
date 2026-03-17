@@ -6,37 +6,6 @@ body {
     margin: 0;
 }
 
-/* Menu de navegacion */
-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px 60px;
-    background-color: white;
-    text-align: center;
-}
-
-
-header ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    color: rgb(0, 0, 0);
-    text-decoration: none;
-    list-style: none;
-    margin: 20px;
-    padding: 10px;
-    gap: 80px;
-}
-
-header a {
-    text-decoration: none;
-    color: #c78b2c;
-    font-size: 14px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-}
-
 .TituloPrincipal {
     text-align: center;
     color: white;
