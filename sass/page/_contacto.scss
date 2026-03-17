@@ -1,0 +1,6 @@
+
+@use '../general/variables' as *;
+
+.contacto-personal{
+    @include estilo-contenedor($fondo, $padding, $borde)
+}

@@ -1,0 +1,11 @@
+
+$fondo: #eaf4ee;
+$padding: 20px 22px;
+$borde: 4px solid #013220;
+
+@mixin estilo-contenedor($fondo, $padding, $borde) {
+    background-color: $fondo;
+    padding: $padding;
+    border-top: $borde;
+    border-bottom: $borde;
+}

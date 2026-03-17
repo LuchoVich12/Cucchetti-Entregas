@@ -84,6 +84,13 @@ footer h4 p {
   background-color: #a89809;
 }
 
+.contacto-personal {
+  background-color: #eaf4ee;
+  padding: 20px 22px;
+  border-top: 4px solid #013220;
+  border-bottom: 4px solid #013220;
+}
+
 .servicios {
   background-color: #eaf4ee;
   padding: 20px 22px;
