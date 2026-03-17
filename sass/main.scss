@@ -1,2 +1,7 @@
-@use 'general/header_main';
-@use 'general/footer';
+@use './general/header_main';
+@use './general/footer';
+@use './general/unica';
+
+@use './page/contacto';
+@use './page/servicios';
+@use './general/media-querie';

@@ -11,77 +11,88 @@
 </head>
 
 <body>
-    <div>
-        <header>
-            <!-- logo de la empresa -->
-            <a href="../index.html"><img src="../IMG/Logo 1.jpg" alt="Logo de la empresa" width="200" height="150"></a>
-            <!-- menu de navegacion -->
-            <nav>
-                <ul class="nav justify-content-end">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="../index.html">inicio</a>
-                    </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="Servicios.html">Servicios</a>
-                    </li>
+    <header>
+        <!-- logo de la empresa -->
+        <a href="../index.html"><img src="../img/Logo 1.jpg" alt="Logo de la empresa" width="200" height="150"></a>
+        <!-- menu de navegacion -->
+        <nav>
+            <ul class="nav justify-content-end">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../index.html">inicio</a>
+                </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contacto</a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
-    </div>
+                <li class="nav-item">
+                    <a class="nav-link" href="servicios.html">Servicios</a>
+                </li>
 
-    <div>
-        <main class="ContactoMain">
-            <section>
-                <h1>Contacto</h1>
-                <h2 class="Contacto">Tiene alguna consulta?</h2>
-                <p>Dejenos su mensaje:</p>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
 
-                <!-- formulario de contacto -->
-                <form action="/submit" method="post">
-                    <label for="Nombre">Nombre</label>
-                    <input type="text" id="Nombre" name="Nombre">
+    <main class="contacto container my-5">
+        <section class="seccion-contacto">
+            <h1 class="text-center">Contacto</h1>
+            <h2 class="text-center">¿Tiene alguna consulta?</h2>
+            <p class="text-center">Déjenos su mensaje:</p>
 
-                    <label for="Apellido">Apellido</label>
-                    <input type="text" id="Apellido" name="Apellido">
+            <form class="row g-3">
+                <div class="col-md-6">
+                    <label for="nombre" class="form-label">Nombre</label>
+                    <input type="text" id="nombre" class="form-control">
+                </div>
 
-                    <label for="Email">Email</label>
-                    <input type="email" id="Email" name="Email">
+                <div class="col-md-6">
+                    <label for="apellido" class="form-label">Apellido</label>
+                    <input type="text" id="apellido" class="form-control">
+                </div>
 
-                    <label for="Mensaje">Mensaje</label>
-                    <textarea id="Mensaje" name="Mensaje" rows="4" cols="50"></textarea>
+                <div class="col-md-6">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" id="email" class="form-control">
+                </div>
 
-                    <input type="submit" value="Enviar">
-                </form>
-            </section>
-        </main>
-    </div>
+                <div class="col-md-6">
+                    <label for="empresa" class="form-label">Empresa</label>
+                    <input type="text" id="empresa" class="form-control" placeholder="Ingrese su empresa">
+                </div>
 
-    <div>
-        <footer>
-            <div class="col-footer Telefono">
-                <h4>Telefono:</h4>
-                <p>236-154603219</p>
-                <p>236-154426626</p>
-            </div>
+                <div class="col-12">
+                    <label for="mensaje" class="form-label">Mensaje</label>
+                    <textarea id="mensaje" class="form-control" rows="5"></textarea>
+                </div>
 
-            <div class="col-footer Correo">
-                <h4>Correo:</h4>
-                <p>icucchetti@hotmail.com</p>
-                <p>cucchetti@cerealnet.com</p>
-                <p>ignaciocucchetti@cofcointernational.com</p>
-            </div>
+                <div class="col-12">
+                    <button type="submit" class="btn btn-warning">Enviar</button>
+                </div>
+            </form>
+        </section>
+        </div>
+    </main>
 
-            <div class="col-footer Direccion">
-                <h4>Direccion:</h4>
-                <p>Alberdi 172 - Junin (B) 6000</p>
-            </div>
-        </footer>
-    </div>
+    <footer>
+        <div class="col-footer Telefono">
+            <h4>Telefono:</h4>
+            <p>236-154603219</p>
+            <p>236-154426626</p>
+        </div>
+
+        <div class="col-footer Correo">
+            <h4>Correo:</h4>
+            <p>icucchetti@hotmail.com</p>
+            <p>cucchetti@cerealnet.com</p>
+            <p>ignaciocucchetti@cofcointernational.com</p>
+        </div>
+
+        <div class="col-footer Direccion">
+            <h4>Direccion:</h4>
+            <p>Alberdi 172 - Junin (B) 6000</p>
+        </div>
+    </footer>
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
