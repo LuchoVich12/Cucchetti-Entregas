@@ -13,4 +13,27 @@
     h2 {
         text-decoration: underline;
     }
+
+    .servicios-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 24px;
+    }
+
+    .servicio-item {
+        background-color: #ffffff;
+        border: 1px solid #b7cbbd;
+        border-radius: 12px;
+        padding: 20px;
+        box-shadow: 0 4px 12px rgba(1, 50, 32, 0.08);
+    }
+
+    .servicio-item h2 {
+        margin-top: 0;
+        color: #013220;
+    }
+
+    .servicio-item p {
+        margin-bottom: 0;
+    }
 }

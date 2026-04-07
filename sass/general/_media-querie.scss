@@ -65,5 +65,9 @@
         height: auto;
         padding: 16px;
         border-width: 2px;
-    } 
+    }
+
+    .servicios .servicios-grid {
+        grid-template-columns: 1fr;
+    }
  }

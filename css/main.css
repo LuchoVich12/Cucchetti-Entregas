@@ -65,19 +65,22 @@ footer h4 p {
   justify-content: center;
   align-items: center;
   text-align: center;
-  color: white;
+  color: #2A3439;
   padding: 20px;
 }
 
 .TituloPrincipal {
-  font-size: 55px;
-  margin-bottom: 20px;
+  font-size: 60px;
+  margin-bottom: 70px;
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.137);
 }
 
 .parrafo-principal {
   max-width: 800px;
-  font-size: 18px;
+  font-size: 20px;
   line-height: 1.6;
+  background-color: rgba(255, 255, 255, 0.61);
 }
 
 .info {
@@ -104,6 +107,25 @@ footer h4 p {
 }
 .servicios h2 {
   text-decoration: underline;
+}
+.servicios .servicios-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+}
+.servicios .servicio-item {
+  background-color: #ffffff;
+  border: 1px solid #b7cbbd;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(1, 50, 32, 0.08);
+}
+.servicios .servicio-item h2 {
+  margin-top: 0;
+  color: #013220;
+}
+.servicios .servicio-item p {
+  margin-bottom: 0;
 }
 
 /* Dispositivo movil */
@@ -161,6 +183,9 @@ footer h4 p {
     height: auto;
     padding: 16px;
     border-width: 2px;
+  }
+  .servicios .servicios-grid {
+    grid-template-columns: 1fr;
   }
 }
 
