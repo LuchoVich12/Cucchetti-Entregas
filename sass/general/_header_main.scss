@@ -13,11 +13,45 @@ header {
         padding: 0;
 
         a {
+            position: relative;
             text-decoration: none;
             font-size: 14px;
             text-transform: uppercase;
             letter-spacing: 2px;
             padding: 0px;
+            color: #013220;
+            transition: color 0.3s ease;
+
+            &::after {
+                content: "";
+                position: absolute;
+                left: 0;
+                bottom: -6px;
+                width: 100%;
+                height: 2px;
+                background-color: goldenrod;
+                transform: scaleX(0);
+                transform-origin: left;
+                transition: transform 0.3s ease;
+            }
+
+            &:hover {
+                color: goldenrod;
+            }
+
+            &:hover::after {
+                transform: scaleX(1);
+            }
+        }
+
+        .nav-link.active,
+        .nav-link[aria-current="page"] {
+            color: goldenrod;
+        }
+
+        .nav-link.active::after,
+        .nav-link[aria-current="page"]::after {
+            transform: scaleX(1);
         }
     }
 }
