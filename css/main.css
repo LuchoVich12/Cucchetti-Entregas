@@ -84,7 +84,7 @@ footer h4 p {
 }
 
 .ContenidoPrincipal {
-  background-image: url(../img/fondo_ini.jpg);
+  background-image: url(/Image/fondo_ini.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
